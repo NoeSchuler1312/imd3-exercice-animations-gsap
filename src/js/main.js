@@ -114,8 +114,7 @@ const itemF = document.querySelector("#js-exercise-6");
 
 const animationF = gsap.timeline();
 
-animationF.to(itemF, { y: -100, duration: 3 });
-animationF.to(itemF, { scale: 0.75, duration: 5 });
+animationF.to(itemF, { y: -100, duration: 3, scale: 0.75, duration: 5 });
 
 /* -----------------------
     Exercice 7 (repeat + yoyo)
@@ -152,6 +151,7 @@ const animationH = gsap.timeline();
 
 btnH.addEventListener("click", function () {
   animationH.to(itemH, {
-    backgroundColor: "#05f545",
+    background: "#05f545",
+    duration: 1,
   });
 });
