@@ -126,9 +126,32 @@ animationF.to(itemF, { scale: 0.75, duration: 5 });
     et répéter ce mouvement à l'infini
    ----------------------- */
 
+const itemG = document.querySelector("#js-exercise-7");
+
+const animationG = gsap.timeline();
+
+animationG.to(itemG, {
+  rotate: 135,
+  duration: 2,
+  ease: "Elastic.out",
+  yoyo: true,
+  repeat: -1,
+});
+
 /* -----------------------
     Exercice 8
    -----------------------
     Réaliser une animation libre
     lorsque le bouton est cliqué
    ----------------------- */
+
+const itemH = document.querySelector("#js-exercise-8");
+const btnH = document.querySelector("button");
+
+const animationH = gsap.timeline();
+
+btnH.addEventListener("click", function () {
+  animationH.to(itemH, {
+    backgroundColor: "#05f545",
+  });
+});
